@@ -1,0 +1,99 @@
+@import '../../styles/vars.scss';
+.switch-container {
+  position: absolute;
+  right: 0;
+  -webkit-transform: translate3d( -50%, -50%, 0 );
+  transform: translate3d( -50%, -50%, 0 );
+}
+
+span.switch  {
+  -webkit-appearance: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+
+span.switch + div {
+  vertical-align: middle;
+  width: 40px;
+  height: 20px;
+  border: solid 1px #dbdbdb;
+  border-radius: 999px;
+  background-color: #fafafa;
+  -webkit-transition-duration: .4s;
+  transition-duration: .4s;
+  -webkit-transition-property: background-color, box-shadow;
+  transition-property: background-color, box-shadow;
+  cursor: pointer;
+}
+
+span.switch + div span {
+  position: absolute;
+  font-size: 1.6rem;
+  color: white;
+  margin-top: 12px;
+}
+
+span.switch + div span:nth-child( 1 ) {
+  margin-left: 15px;
+}
+
+span.switch + div span:nth-child( 2 ) {
+  margin-left: 55px;
+}
+
+span.switch:checked + div {
+  width: 64px;
+  background-position: 0 0;
+  background-color: #fafafa;
+}
+
+span.switch + div {
+  width: 56px;
+  height: 28px;
+}
+
+
+span.checked + div {
+  border: solid 1px $pink;
+  background-color: $pink;
+}
+
+span.switch + div > div {
+  float: left;
+  width: 26px; height: 26px;
+  border-radius: inherit;
+  background: #ffffff;
+  -webkit-transition-timing-function: cubic-bezier(1,0,0,1);
+  transition-timing-function: cubic-bezier(1,0,0,1);
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  -webkit-transition-property: transform, background-color;
+  transition-property: transform, background-color;
+  pointer-events: none;
+  margin-top: 1px;
+  margin-left: 1px;
+  box-shadow: 1px 1px 2px #888888;
+}
+span.checked + div > div {
+  box-shadow: none;
+}
+
+span.checked + div > div {
+  -webkit-transform: translate3d(20px, 0, 0);
+  transform: translate3d(20px, 0, 0);
+  background-color: #ffffff;
+}
+
+span.bigswitch.switch + div > div {
+  width: 44px;
+  height: 44px;
+  margin-top: 1px;
+}
+
+
+span.checked + div > div {
+  -webkit-transform: translate3d(29px, 0, 0);
+  transform: translate3d(29px, 0, 0);
+}

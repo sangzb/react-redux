@@ -1,0 +1,103 @@
+@import '../../styles/vars.scss';
+.anonymousCon {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  padding-top: 15px;
+  .anonymousForm {
+    width: 92%;
+    margin: auto;
+    background-color: $white;
+    border-radius: 10px;
+    .title {
+      font-size: 15px;
+      color: #a4a4a4;
+      text-align: center;
+      line-height: 48.5px;
+    }
+    .formcontent {
+      border-top: solid 1px #f6f4f4;
+      border-bottom: solid 1px #f6f4f4;
+      padding: 37.5px 0;
+      .anontmousAvatar {
+        display: block;
+        width: 105px;
+        height: 105px;
+        border-radius: 55px;
+        background: url('./empty.png') no-repeat center center;
+        background-size: cover;
+        margin: 0 auto 18.5px;
+        position: relative;
+        i.refresh {
+          display: block;
+          width: 37.5px;
+          height: 37.5px;
+          background: url('./camera.png') no-repeat center center;
+          background-size: 100%;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+        }
+        input[type='file'] {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+        }
+      }
+      .anonymousName {
+        -webkit-appearance: none;
+        border: solid 1px #dbdbdb;
+        display: block;
+        color: #dbdbdb;
+        height: 30px;
+        width: 210px;
+        border-radius: 18.5px;
+        line-height: 37.5px;
+        font-size: 17px;
+        text-align: center;
+        margin: auto;
+        &.deepercolor {
+          color: #666
+        }
+      }
+
+      p.anonymousName {
+        line-height: 30px;
+      }
+    }
+
+    .buttonCon {
+      font-size: 17px;
+
+      text-align: center;
+      overflow: hidden;
+      color: #a4a4a4;
+      span.button {
+        width: 50%;
+        height: 100%;
+        float: left;
+        line-height: 48.5px;
+        padding: 0;
+        letter-spacing: 30px;
+        text-indent: 30px;
+      }
+      .submit {
+        color: $pink;
+        position: relative;
+        i.split{
+          width: 1px;
+          height: 100%;
+          background-color: #f6f4f4;
+          position: absolute;
+          top: 0;
+          right: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import "../../styles/vars";
+
+// 加载更多样式
+.has-no-more {
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: block;
+  text-align: center;
+  color: $light-gray;
+
+  span {
+    text-align: left;
+    font-size: 14px;
+  }
+}

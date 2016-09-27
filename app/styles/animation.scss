@@ -1,0 +1,68 @@
+@-webkit-keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+@-webkit-keyframes slideOutLeft {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.page-enter {
+  transform: translate3d(100%, 0, 0);
+}
+
+.page-enter.page-enter-active {
+  animation-name: slideInRight;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+.page-leave {
+  transform: translate3d(0, 0, 0)
+}
+
+.page-leave.page-leave-active {
+  animation-name: slideOutLeft;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}

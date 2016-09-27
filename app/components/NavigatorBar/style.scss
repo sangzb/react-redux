@@ -1,0 +1,68 @@
+@import '../../styles/vars.scss';
+.navigatorBar {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: #fbfbfb;
+  list-style: none;
+  height: 51px;
+  position: fixed;
+  left: 0;
+  bottom: -1px;
+  z-index: 9999;
+  li {
+    a {
+      color: #2a2a29;
+      text-decoration: none;
+    }
+    float: left;
+    width: 27%;
+    height: 50px;
+    text-align: center;
+    border-top: solid 0.5px #cac6c6;
+    font-size: 13px;
+    line-height: 75px;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
+  li.help {
+    width: 38%;
+    font-size: 13px;
+    background: url('./light.png') no-repeat center 21%;
+    background-size: auto 43%;
+    color: #4e4e4e;
+    &.active {
+      background: url('./lightpink.png') no-repeat center 21%;
+      background-size: auto 43%;
+      color: $pink;
+    }
+  }
+  li.user {
+    width: 38%;
+    font-size: 13px;
+    background: url('./per.png') no-repeat center 20%;
+    background-size: auto 43%;
+    color: #4e4e4e;
+    &.active {
+      background: url('./perpink.png') no-repeat center 20%;
+      background-size: auto 43%;
+      color: $pink;
+    }
+  }
+  li.post {
+    width: 24%;
+    line-height: 50px;
+    border-top: solid 0.5px #ff88a5;
+    span {
+      background: url('./fabu.png') no-repeat center center;
+      background-size: auto 26%;
+      padding: 35px;
+    }
+    color: $white;
+    background-image: -o-linear-gradient(top, #ff88a5, $pink);
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#ff85a2), to($pink));
+    background-image: -moz-linear-gradient(top, #ff85a2, $pink);
+  }
+  li.active {
+    color: $pink;
+  }
+}

@@ -1,0 +1,75 @@
+html, body {
+  position: relative;
+  background: $general-background;
+  font-size: $general-font-size;
+  font-color: $font-color;
+  // overflow: hidden;
+  font-family: "PingHei","Helvetica Neue",Helvetica, Arial, "Lantinghei SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", "SimSun", "sans-serif";
+}
+
+.gotoTop {
+  position: fixed;
+  right: 0;
+  bottom: 15%;
+  background: url('../images/gotop.png') no-repeat center center;
+  background-size: 100%;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: none;
+  z-index: 9999;
+}
+
+.blur {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=5, MakeShadow=false);
+}
+
+@media (max-width: 320px) {
+  html{
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px){
+  html{
+    font-size: 37.5px;
+  }
+}
+
+@media (min-width: 376px) {
+  html{
+    font-size: 42px;
+  }
+}
+
+.iScrollVerticalScrollbar {
+  position: absolute;
+  z-index: 9999;
+  width: 3px;
+  bottom: 2px;
+  top: 2px;
+  right: 2px;
+  overflow: hidden;
+  .iScrollIndicator {
+    width: 100%;
+    background: #ccc;
+    border-radius: 2px;
+  }
+}
+
+.label_general {
+  background-color: #3dbaea;
+}
+.label_idle {
+  background-color: #efc326;
+}
+.label_tucao {
+  background-color: #534c53;
+}
+.label_friend {
+  background-color: #ff7fa0;
+}
+

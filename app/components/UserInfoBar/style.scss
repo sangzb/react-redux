@@ -1,0 +1,61 @@
+@import '../../styles/vars.scss';
+.listContainer {
+  section.userInfoBar {
+    padding: 0 20px;
+  }
+}
+section.userInfoBar {
+  i.avator {
+    display: inline-block;
+    vertical-align: middle;
+    width: 34px;
+    height: 34px;
+    background: no-repeat center center;
+    background-size: cover;
+    border-radius: 19px;
+  }
+  span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  span.username {
+    height: 37.5px;
+    font-size: 15px;
+    line-height: 37.5px;
+    margin-left: 9.5px;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    color: $font-color;
+  }
+  span.postnum {
+    border: solid 1px #ff8ca7;
+    float: right;
+    height: 22px;
+    line-height: 22.5px;
+    margin-top: 5.5px;
+    margin-left: 9.5px;
+    padding: 0 11px;
+    color: #ff8ca7;
+    border-radius: 13px;
+    font-size: 13px;
+  }
+  span.anonymous {
+    width: 30px;
+    height: 1rem;
+    background: url('./niming.png') no-repeat center center;
+    background-size: auto 30%;
+  }
+  span.poster {
+    width: 45px;
+    height: 37.5px;
+    background: url('./lz.png') no-repeat center center;
+    background-size: auto 45%;
+  }
+  span.disabled {
+    border-color: $light-gray;
+    color: $light-gray;
+  }
+}

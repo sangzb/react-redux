@@ -1,0 +1,62 @@
+@import '../../styles/vars.scss';
+.CoverCon {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  .CoverLayer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    opacity: 1;
+  }
+  .CoverContentLayer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 12;
+    .loadingicon {
+      width: 45px;
+      height: 45px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -22.5px;
+      margin-top: -22.5px;
+      background: #ccc url('./loading.gif') no-repeat center center;
+      background-size: 50%;
+      border-radius: 6px;
+    }
+    .loadingtext {
+      width: 187.5px;
+      height: 45px;
+      line-height: 45px;
+      text-align: center;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      font-size: $font-size;
+      margin-left: -94px;
+      margin-top: -22.5px;
+      border-radius: 10px;
+      background: #ccc;
+      color: #fff;
+    }
+  }
+}
+
+.hide {
+  opacity: 0;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  display: none;
+}
