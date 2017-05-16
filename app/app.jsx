@@ -74,29 +74,6 @@ ReactDom.render((
     <Router history={browserHistory}>
       <Route path='/' component={connectedApp}>
         <IndexRoute component={ListPage} />
-        <Route path='/post' component={PostDiscussionPage} />
-        <Route path='/form' component={PostForm} />
-
-        <Route path='/detail' component={Content} />
-        <Route path='/user' component={UserInfo} />
-        <Route path='/user/question' component={UserPosted} />
-        <Route path='/user/complaint' component={UserPosted} />
-        <Route path='/user/idle' component={UserPosted} />
-        <Route path='/user/friend' component={UserPosted} />
-        <Route path='/user/liked' component={UserLiked} />
-        <Route path='/user/info' component={UserAnonymous} />
-        <Route path='/user/rank' component={HelperRank} />
-
-        <Route path='/tags' component={TagPage} />
-        <Route path='/tags/subTags' component={SubTagPage} />
-
-        <Route path='/complaint' component={ListPage} />
-        <Route path='/complaint/detail' component={Content} />
-        <Route path='/complaint/form' component={PostForm} />
-
-        <Route path='/friend/form' component={PostForm} />
-
-        <Route path='/secondhand/form' component={PostForm} />
       </Route>
     </Router>
   </Provider>

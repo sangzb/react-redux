@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bebc9716-1bf4-4bc8-913f-4c2cc89d235e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/Anonymous/camera.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/Anonymous/empty.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/Anonymous/index.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/Anonymous/name.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/Anonymous/name_o.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/Anonymous/style.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/AnswerPanel/Icon-60@3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/AnswerPanel/index.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/AnswerPanel/style.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/ConfirmPopup/index.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/ConfirmPopup/popupbg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/ConfirmPopup/style.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/HeadCarousel/close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/HeadCarousel/headbg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/HeadCarousel/index.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/HeadCarousel/style.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/ImagesPanel/Icon-60@3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/ImagesPanel/index.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/ImagesPanel/style.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/LinkNavBar/index.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/LinkNavBar/nav01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/LinkNavBar/nav02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/LinkNavBar/nav03.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/LinkNavBar/nav04.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/LinkNavBar/style.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/NavigatorBar/btnBg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/NavigatorBar/chat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/NavigatorBar/chatpink.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/NavigatorBar/fabu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/NavigatorBar/index.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/NavigatorBar/light.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/NavigatorBar/lightpink.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/NavigatorBar/per.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/NavigatorBar/perpink.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/NavigatorBar/style.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/QuestionList/Icon-60@3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/QuestionList/down.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/QuestionList/favor_common.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/QuestionList/favor_highlight.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/QuestionList/help.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/QuestionList/index.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/QuestionList/style.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/QuestionList/up.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/ShareHeader/index.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/ShareHeader/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/ShareHeader/style.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/SwitchButton/Icon-60@3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/SwitchButton/index.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/SwitchButton/style.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/UserInfoBar/index.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/UserInfoBar/lz.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/UserInfoBar/niming.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/components/UserInfoBar/style.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/ContentPage/Icon-60@3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/ContentPage/bad_common.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/ContentPage/bad_highlight.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/ContentPage/c.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/ContentPage/comment.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/ContentPage/favor_common.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/ContentPage/favor_highlight.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/ContentPage/good_common.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/ContentPage/good_highlight.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/ContentPage/help.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/ContentPage/home.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/ContentPage/index.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/ContentPage/love.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/ContentPage/love2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/ContentPage/profile-my-tags-pink@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/ContentPage/style.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/PostDiscussion/bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/PostDiscussion/icon-01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/PostDiscussion/icon-02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/PostDiscussion/icon-03.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/PostDiscussion/icon-04.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/PostDiscussion/index.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/PostDiscussion/jiantou.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/PostDiscussion/line.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/PostDiscussion/style.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/PostForm/add.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/PostForm/close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/PostForm/help-jiantou.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/PostForm/index.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/PostForm/jiantou.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/PostForm/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/PostForm/style.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/TagPage/index.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/TagPage/jiantou.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/TagPage/style.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/TagPage/subTags.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/TagPage/tag01.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/TagPage/tag02.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/TagPage/tag03.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/TagPage/tag04.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/TagPage/tag05.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/TagPage/tag06.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/TagPage/tag07.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/TagPage/tag08.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/User/Anonymous/Icon-60@3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/User/Anonymous/arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/User/Anonymous/camera.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/User/Anonymous/index.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/User/SuperHelper/Icon-60@3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/User/SuperHelper/arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/User/SuperHelper/index.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/User/SuperHelper/paihang.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/User/UserInfo/Icon-60@3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/User/UserInfo/arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/User/UserInfo/index.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/User/UserLiked/Icon-60@3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/User/UserLiked/index.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/User/UserPosted/Answered.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/User/UserPosted/Icon-60@3x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/User/UserPosted/Question.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/User/UserPosted/index.jsx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/User/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/containers/User/style.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/apple-touch-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/bmy-logo-pink.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/bmy-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/gotop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/logo-blue.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/logo-blue@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/images/logo@2x.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/reducers/answer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/reducers/apiReducer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/reducers/fileupload.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/reducers/helperRank.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/reducers/listPage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/reducers/request.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/reducers/requestAnswer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/reducers/requestForm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/reducers/tags.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/reducers/user.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/reducers/userPage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/ajax-loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/animation.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/owl.carousel.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/owl.theme.default.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/owl.video.play.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/styles/slick.scss" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/actions/index.js" afterPath="$PROJECT_DIR$/app/actions/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.jsx" afterPath="$PROJECT_DIR$/app/app.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/constants/index.js" afterPath="$PROJECT_DIR$/app/constants/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/reducers/index.js" afterPath="$PROJECT_DIR$/app/reducers/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/actions/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="32">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webpack.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/constants/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="apiSelector.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/selectors/apiSelector.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/reducers/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="3" column="37" lean-forward="false" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/store/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/app.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="944">
+              <caret line="75" column="43" lean-forward="false" selection-start-line="75" selection-start-column="43" selection-end-line="75" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/actions/index.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/app/constants/index.js" />
+        <option value="$PROJECT_DIR$/app/reducers/index.js" />
+        <option value="$PROJECT_DIR$/app/app.jsx" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="25" />
+    <option name="y" value="23" />
+    <option name="width" value="1255" />
+    <option name="height" value="777" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-redux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-redux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-redux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-redux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-redux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-redux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-redux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-redux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="store" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-redux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-redux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="selectors" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-redux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-redux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reducers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-redux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-redux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="containers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-redux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-redux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="constants" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-redux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-redux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-redux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="react-redux" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="actions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="nodejs_interpreter_path" value="$USER_HOME$/.nvm/versions/node/v7.7.3/bin/node" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="js-jscs-nodeInterpreter" value="$USER_HOME$/.nvm/versions/node/v7.7.3/bin/node" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bebc9716-1bf4-4bc8-913f-4c2cc89d235e" name="Default" comment="" />
+      <created>1494931341757</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1494931341757</updated>
+      <workItem from="1494931343683" duration="423000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="423000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="25" y="23" width="1255" height="777" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24940239" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/actions/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="20" lean-forward="false" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/constants/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/selectors/apiSelector.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/reducers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="37" lean-forward="false" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="944">
+          <caret line="75" column="43" lean-forward="false" selection-start-line="75" selection-start-column="43" selection-end-line="75" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
