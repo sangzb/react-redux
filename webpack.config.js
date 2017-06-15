@@ -1,13 +1,17 @@
-var webpack = require('webpack');
-var path = require('path');
-var os = require('os');
-var AssetsPlugin = require('assets-webpack-plugin');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+'use strict';
 
-var NODE_ENV = process.env.NODE_ENV || 'development';
+let webpack = require('webpack');
+let path = require('path');
+let os = require('os');
+let AssetsPlugin = require('assets-webpack-plugin');
+let HtmlWebpackPlugin = require('html-webpack-plugin');
+let qiniuPlugin = require('../webpack-qiniu-plugin');
+let autoprefixer = require('autoprefixer');
 
-var host;
-var ifaces = os.networkInterfaces();
+let NODE_ENV = process.env.NODE_ENV || 'development';
+
+let host;
+let ifaces = os.networkInterfaces();
 (ifaces.en0 || []).forEach(function(iface) {
   if (iface.family === 'IPv4') {
     host = iface.address || '127.0.0.1';
@@ -16,7 +20,7 @@ var ifaces = os.networkInterfaces();
 
 host = host || '127.0.0.1';
 
-var plugins = [
+let plugins = [
   new webpack.optimize.LimitChunkCountPlugin({ maxChunks: 50 }),
   new webpack.optimize.CommonsChunkPlugin({
     name: 'vendor',
@@ -33,7 +37,7 @@ var plugins = [
   new HtmlWebpackPlugin({
     filename: '../index.html',
     template: 'app/index.ejs',
-    hash: true
+    hash: false
   }),
   new AssetsPlugin({
     path: path.join(__dirname),
@@ -42,13 +46,26 @@ var plugins = [
   })
 ];
 
-var publicPath = '/wechat/discussion/assets/';
+let publicPath = qiniuPlugin.publicPath('me');
 
-var preLoaders = [];
-var babelLoader = 'babel?cacheDirectory=true&presets[]=es2015&presets[]=react';
+let babelLoader = {
+  loader: 'babel-loader',
+  options: {
+    cacheDirectory: true,
+    presets: ['es2015', 'react']
+  }
+};
+
+let rules = [];
 
 // 生产/预发布环境
 if (NODE_ENV !== 'development') {
+  rules.push({
+    test: /\.js|jsx$/,
+    use: babelLoader,
+    exclude: /(node_modules|bower_components)/
+  });
+
   plugins.push(
     new webpack.optimize.UglifyJsPlugin({
       compressor: {
@@ -58,23 +75,133 @@ if (NODE_ENV !== 'development') {
         except: ['$super', '$', 'exports', 'require']
       }
     }),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoErrorsPlugin(),
+
+    // 上传至七牛
+    qiniuPlugin('me')
   );
 } else {
   // vendor.unshift('webpack/hot/only-dev-server');
   // vendor.unshift('webpack-dev-server/client?http://0.0.0.0:2992');
   plugins.push(new webpack.HotModuleReplacementPlugin());
   // 开发环境
-  publicPath = `http://${host}:2995/`;
+  publicPath = '/';
 
-  preLoaders = [
+  //preLoader
+  rules.push(
     {
       test: /\.js|jsx$/,
       include: pathToRegExp(path.join(__dirname, 'app')),
-      loaders: ['eslint-loader', babelLoader]
+      use: [
+        {
+          loader: 'eslint-loader'
+        },
+        babelLoader
+      ],
+      enforce: 'pre',
+      exclude: /node_modules/
     }
-  ];
+  );
+
+  rules.push(
+    {
+      test: /\.js|jsx$/,
+      use: [
+        {
+          loader: 'react-hot-loader'
+        },
+        babelLoader
+      ],
+      exclude: /(node_modules|bower_components)/
+    }
+  );
 }
+
+let otherRules = [
+  {
+    test: /\.json$/,
+    use: {
+      loader: 'json-loader'
+    }
+  },
+  {
+    test: /\.css$/,
+    use: [
+      {
+        loader: 'style-loader'
+      },
+      {
+        loader: 'css-loader'
+      },
+      {
+        loader: 'resolve-url-loader'
+      }
+    ]
+  },
+  {
+    test: /\.s[c|a]ss$/,
+    use: [
+      {
+        loader: 'style-loader'
+      },
+      {
+        loader: 'css-loader'
+      },
+      {
+        loader: 'postcss-loader',
+        options: {
+          plugins: function() {
+            return [autoprefixer({ remove: false, browsers: ['> 1%'] })];
+          }
+        }
+      },
+      {
+        loader: 'resolve-url-loader'
+      },
+      {
+        loader: 'sass-loader'
+      }
+    ]
+  },
+  {
+    test: /\.png|jpg|gif$/,
+    use: {
+      loader: 'url-loader',
+      options: {
+        prefix: 'img/',
+        limit: 5000
+      }
+    }
+  },
+  {
+    test: /\.(woff|svg|ttf|eot)([\?]?.*)$/,
+    use: {
+      loader: 'file-loader' ,
+      options: {
+        name: '[name].[ext]'
+      }
+    }
+  },
+  // 暴露部分插件为全局
+  {
+    test: /jquery\.js$/,
+    use: [
+      {
+        loader: 'expose-loader',
+        options: 'jQuery'
+      },
+      {
+        loader: 'expose-loader',
+        options: '$'
+      }
+    ]
+  }
+];
+
+rules = rules.concat(otherRules);
+
+process.traceDeprecation = true;
+process.noDeprecation = true;
 
 module.exports = {
   devtool: NODE_ENV === 'development' ? 'eval' : undefined,
@@ -85,10 +212,6 @@ module.exports = {
       'normalize-css',
       'animate.css'
     ],
-
-    // 垫片
-    // shivs: ['html5shiv'],
-
     // 应用
     app: ['app.jsx']
   },
@@ -99,45 +222,22 @@ module.exports = {
   },
   recordsOutputPath: path.join(__dirname, 'records.json'),
   module: {
-    loaders: [
-      {
-        test: /\.js|jsx$/,
-        loaders: NODE_ENV === 'development' ? ['react-hot-loader', babelLoader] : [babelLoader],
-        exclude: /(node_modules|bower_components)/
-      },
-      { test: /\.json$/,   loader: 'json-loader' },
-      { test: /\.css$/,    loader: 'style-loader!css-loader!resolve-url' },
-      { test: /\.scss$/,   loader: 'style-loader!css-loader!autoprefixer-loader?{remove: false, browsers: ["> 1%"]}!resolve-url!sass-loader?sourceMap' },
-      { test: /\.sass$/,   loader: 'style-loader!css-loader!autoprefixer-loader?{remove: false, browsers: ["> 1%"]}!resolve-url!sass-loader?sourceMap' },
-      { test: /\.png$/,    loader: 'url-loader?prefix=img/&limit=5000' },
-      { test: /\.jpg$/,    loader: 'url-loader?prefix=img/&limit=5000' },
-      { test: /\.gif$/,    loader: 'url-loader?prefix=img/&limit=5000' },
-      { test: /\.(woff|svg|ttf|eot)([\?]?.*)$/, loader: 'file-loader?name=[name].[ext]' },
-
-      // 暴露部分插件为全局
-      { test: /jquery\.js$/, loader: 'expose?$' },
-      { test: /jquery\.js$/, loader: 'expose?jQuery' },
-      { test: /chartist\.js$/, loader: 'expose?Chartist' },
-      { test: /waves\.js$/, loader: 'expose?Waves' }
-    ],
-    preLoaders: preLoaders
+    rules
   },
   resolveLoader: {
-    root: path.join(__dirname, 'node_modules')
+    modules: [path.join(__dirname, 'node_modules')]
   },
   resolve: {
-    root: [path.join(__dirname, 'app')],
-    modulesDirectories: ['node_modules'],
-    extensions: ['', '.js', '.jsx', '.coffee', '.html', '.css', '.scss', '.sass']
+    modules: [path.join(__dirname, 'app'), 'node_modules'],
+    extensions: ['.js', '.jsx', '.coffee', '.html', '.css', '.scss', '.sass']
   },
   plugins: plugins,
-  fakeUpdateVersion: 0,
   devServer: {
     publicPath: publicPath,
     hot: true,
     inline: true,
     proxy: {
-      '/wechat/discussion/api/*': {
+      '/wechat/discussion/api/': {
         target: `http://${host}:3004`,
         secure: false
       }
