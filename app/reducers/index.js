@@ -1,9 +1,7 @@
 import { combineReducers } from 'redux';
-import apiReducer from './apiReducer';
-
+import { tagsPage } from './tags';
 const rootReducer = combineReducers({
-  // dashboard: apiReducer({ state: 'FETCH_DASHBOARD_INFO', initialState: { data: {} } }),
-  // apps: apiReducer({ state: 'FETCH_APPS' })
+  tagsPage,
 });
 
 export default rootReducer;

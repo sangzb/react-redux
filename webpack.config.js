@@ -5,7 +5,6 @@ let path = require('path');
 let os = require('os');
 let AssetsPlugin = require('assets-webpack-plugin');
 let HtmlWebpackPlugin = require('html-webpack-plugin');
-let qiniuPlugin = require('../webpack-qiniu-plugin');
 let autoprefixer = require('autoprefixer');
 
 let NODE_ENV = process.env.NODE_ENV || 'development';
@@ -35,7 +34,7 @@ let plugins = [
     }
   }),
   new HtmlWebpackPlugin({
-    filename: '../index.html',
+    filename: './index.html',
     template: 'app/index.ejs',
     hash: false
   }),
@@ -46,7 +45,8 @@ let plugins = [
   })
 ];
 
-let publicPath = qiniuPlugin.publicPath('me');
+//let publicPath = qiniuPlugin.publicPath('me');
+let publicPath = '/';
 
 let babelLoader = {
   loader: 'babel-loader',

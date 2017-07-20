@@ -8,3 +8,10 @@ export const toptop = apiAction({
   state: 'TOP_TOP_TOP',
   formatter: 'backfire'
 });
+
+//test dispatch
+export const testDispatch = () => {
+  return {
+    type: 'TEST_DISPATCH'
+  }
+};
