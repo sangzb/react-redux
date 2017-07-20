@@ -2,6 +2,7 @@
 import { connect } from 'react-redux';
 import { polyfill } from 'es6-promise';
 polyfill();
+import Bundle from './containers/Bundle.jsx';
 
 // 样式
 import './styles';
@@ -16,7 +17,16 @@ import { Provider } from 'react-redux';
 import store from './store';
 // 页面
 import IndexPage from './containers/index.jsx';
-import TestPage from './containers/test.jsx';
+//import TestPage from './containers/test.jsx';
+
+// 异步引入
+
+import TestPageContainer from 'bundle-loader?lazy&name=app-[List]!./containers/test.jsx';
+const TestPage = () => (
+  <Bundle load={TestPageContainer}>
+    {(TestPage) => <TestPage />}
+  </Bundle>
+);
 
 
 const App = (props) => (

@@ -5,8 +5,8 @@
   "main": "main.js",
   "scripts": {
     "test": "jasmine",
-    "webpack": "webpack-dev-server --config webpack.config.js --progress --colors --host=10.164.20.194 --port 3000 --inline",
-    "build": "NODE_ENV=production webpack --config webpack.config.js --progress --colors --inline"
+    "webpack": "webpack-dev-server --config webpack.config.js --progress --colors --host=10.164.22.165 --port 3000 --inline",
+    "build": "NODE_ENV=production webpack --config webpack.config.js --progress --colors"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   "license": "ISC",
   "dependencies": {
     "animate.css": "^3.5.1",
+    "bundle-loader": "^0.5.5",
     "classnames": "^2.2.3",
     "es6-promise": "^3.1.2",
     "history": "^2.1.2",

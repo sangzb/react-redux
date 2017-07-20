@@ -75,18 +75,12 @@ if (NODE_ENV !== 'development') {
         except: ['$super', '$', 'exports', 'require']
       }
     }),
-    new webpack.NoErrorsPlugin(),
-
-    // 上传至七牛
-    qiniuPlugin('me')
+    new webpack.NoErrorsPlugin()
   );
 } else {
-  // vendor.unshift('webpack/hot/only-dev-server');
-  // vendor.unshift('webpack-dev-server/client?http://0.0.0.0:2992');
   plugins.push(new webpack.HotModuleReplacementPlugin());
   // 开发环境
   publicPath = '/';
-
   //preLoader
   rules.push(
     {
@@ -218,7 +212,8 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist/assets'),
     publicPath: publicPath,
-    filename: '[name].bundle.js'
+    filename: '[name].bundle.js',
+    chunkFilename: '[name].[chunkhash:5].chunk.js'
   },
   recordsOutputPath: path.join(__dirname, 'records.json'),
   module: {
