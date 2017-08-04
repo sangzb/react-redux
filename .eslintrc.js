@@ -25,7 +25,7 @@ module.exports = {
       "jsx":true
     }
   },
-  "extends": ["eslint:recommended", "plugin:jsx-a11y/recommended"],
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
   "plugins": [
     "react"
   ],
@@ -320,7 +320,7 @@ module.exports = {
     // 强制使用命名的 function 表达式
     "func-names": 0,
     // 文件末尾强制换行
-    "eol-last": 2,
+    "eol-last": 0,
     "indent": [1, 2, { "SwitchCase": 1 }],
     // 强制在对象字面量的属性中键和值之间使用一致的间距
     "key-spacing": [2, { "beforeColon": false, "afterColon": true }],

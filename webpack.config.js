@@ -45,7 +45,7 @@ let plugins = [
   })
 ];
 
-//let publicPath = qiniuPlugin.publicPath('me');
+// let publicPath = qiniuPlugin.publicPath('me');
 let publicPath = '/';
 
 let babelLoader = {
@@ -81,16 +81,16 @@ if (NODE_ENV !== 'development') {
   plugins.push(new webpack.HotModuleReplacementPlugin());
   // 开发环境
   publicPath = '/';
-  //preLoader
+  // preLoader
   rules.push(
     {
       test: /\.js|jsx$/,
       include: pathToRegExp(path.join(__dirname, 'app')),
       use: [
+        babelLoader,
         {
           loader: 'eslint-loader'
-        },
-        babelLoader
+        }
       ],
       enforce: 'pre',
       exclude: /node_modules/
@@ -101,10 +101,10 @@ if (NODE_ENV !== 'development') {
     {
       test: /\.js|jsx$/,
       use: [
+        babelLoader,
         {
           loader: 'react-hot-loader'
-        },
-        babelLoader
+        }
       ],
       exclude: /(node_modules|bower_components)/
     }
@@ -144,7 +144,7 @@ let otherRules = [
       {
         loader: 'postcss-loader',
         options: {
-          plugins: function() {
+          plugins: function () {
             return [autoprefixer({ remove: false, browsers: ['> 1%'] })];
           }
         }
@@ -170,7 +170,7 @@ let otherRules = [
   {
     test: /\.(woff|svg|ttf|eot)([\?]?.*)$/,
     use: {
-      loader: 'file-loader' ,
+      loader: 'file-loader',
       options: {
         name: '[name].[ext]'
       }
