@@ -1,17 +1,19 @@
 import React from 'react';
-import loaders from 'loaders.css';
+import PropTypes from 'prop-types';
 
 // 样式
 import './style.scss';
 
 class HasNoMore extends React.Component {
-  shouldComponentUpdate(newProps) {
+  shouldComponentUpdate (newProps) {
     return newProps.hasMore !== this.props.hasMore;
   }
 
-  render() {
+  render () {
     let { hasMore, infoText } = this.props;
-    if (hasMore !== 'nomore') return null;
+    if (hasMore !== 'nomore') {
+      return null;
+    }
     return (
       <div className='has-no-more'>
         {
@@ -21,5 +23,10 @@ class HasNoMore extends React.Component {
     );
   }
 }
+
+HasNoMore.propTypes = {
+  hasMore: PropTypes.bool,
+  infoText: PropTypes.string
+};
 
 export default HasNoMore;
