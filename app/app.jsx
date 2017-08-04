@@ -1,8 +1,8 @@
 // 第三方
-import { connect } from 'react-redux';
 import { polyfill } from 'es6-promise';
 polyfill();
 import Bundle from './containers/Bundle.jsx';
+import injectTapEventPlugin from 'react-tap-event-plugin';
 
 // 样式
 import './styles';
@@ -17,17 +17,14 @@ import { Provider } from 'react-redux';
 import store from './store';
 // 页面
 import IndexPage from './containers/index.jsx';
-//import TestPage from './containers/test.jsx';
 
 // 异步引入
-
 import TestPageContainer from 'bundle-loader?lazy&name=app-[List]!./containers/test.jsx';
 const TestPage = () => (
   <Bundle load={TestPageContainer}>
     {(TestPage) => <TestPage />}
   </Bundle>
 );
-
 
 const App = (props) => (
   <BrowserRouter>
@@ -38,7 +35,9 @@ const App = (props) => (
   </BrowserRouter>
 );
 
-//const connectedApp = connect(state => state)(App);
+// const connectedApp = connect(state => state)(App);
+
+injectTapEventPlugin();
 
 ReactDom.render((
   <Provider store={store}>

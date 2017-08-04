@@ -1,7 +1,7 @@
 import { CookieStore, wechatSignIn } from './index.js';
 import { userSignIn, fetchMyInfo } from '../actions';
 
-export default function(user, dispatch, location) {
+export default function (user, dispatch, location) {
   if (user.isSignedIn) {
     dispatch(fetchMyInfo());
   } else {
