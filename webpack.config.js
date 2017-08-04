@@ -11,7 +11,7 @@ let NODE_ENV = process.env.NODE_ENV || 'development';
 
 let host;
 let ifaces = os.networkInterfaces();
-(ifaces.en0 || []).forEach(function(iface) {
+(ifaces.en0 || []).forEach(function (iface) {
   if (iface.family === 'IPv4') {
     host = iface.address || '127.0.0.1';
   }
@@ -232,7 +232,7 @@ module.exports = {
     hot: true,
     inline: true,
     proxy: {
-      '/wechat/discussion/api/': {
+      '/api/': {
         target: `http://${host}:3004`,
         secure: false
       }
@@ -244,5 +244,5 @@ module.exports = {
   }
 };
 
-function escapeRegExpString(str) { return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, '\\$&'); }
-function pathToRegExp(p) { return new RegExp('^' + escapeRegExpString(p)); }
+function escapeRegExpString (str) { return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, '\\$&'); }
+function pathToRegExp (p) { return new RegExp('^' + escapeRegExpString(p)); }
