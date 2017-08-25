@@ -4,7 +4,7 @@ const initialState = assign({
   tags: []
 });
 
-export default (state = initialState, action) => {
+const tags = (state = initialState, action) => {
   let nextState = {};
   switch (action.type) {
     case 'TEST_DISPATCH':
@@ -14,3 +14,5 @@ export default (state = initialState, action) => {
       return state;
   }
 };
+
+export default tags;

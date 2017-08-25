@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
-import { tagsPage } from './tags';
+import tagsPage from './tags';
+
 const rootReducer = combineReducers({
-  tagsPage,
+  tagsPage
 });
 
 export default rootReducer;

@@ -203,8 +203,7 @@ module.exports = {
   entry: {
     // 公共
     vendor: [
-      'normalize-css',
-      'animate.css'
+      'normalize-css'
     ],
     // 应用
     app: ['app.jsx']
