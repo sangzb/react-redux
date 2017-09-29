@@ -6,6 +6,7 @@ let os = require('os');
 let AssetsPlugin = require('assets-webpack-plugin');
 let HtmlWebpackPlugin = require('html-webpack-plugin');
 let autoprefixer = require('autoprefixer');
+let BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 let NODE_ENV = process.env.NODE_ENV || 'development';
 
@@ -45,7 +46,6 @@ let plugins = [
   })
 ];
 
-// let publicPath = qiniuPlugin.publicPath('me');
 let publicPath = '/';
 
 let babelLoader = {
@@ -79,6 +79,9 @@ if (NODE_ENV !== 'development') {
   );
 } else {
   plugins.push(new webpack.HotModuleReplacementPlugin());
+  plugins.push(new BundleAnalyzerPlugin({
+    analyzerPort: '3344'
+  }));
   // 开发环境
   publicPath = '/';
   // preLoader
@@ -101,10 +104,10 @@ if (NODE_ENV !== 'development') {
     {
       test: /\.js|jsx$/,
       use: [
-        babelLoader,
         {
-          loader: 'react-hot-loader'
-        }
+          loader: 'react-hot-loader/webpack'
+        },
+        babelLoader
       ],
       exclude: /(node_modules|bower_components)/
     }
@@ -209,10 +212,13 @@ module.exports = {
     app: ['app.jsx']
   },
   output: {
-    path: path.join(__dirname, 'dist/assets'),
+    path: path.join(__dirname, 'dist/assert/'),
     publicPath: publicPath,
     filename: '[name].bundle.js',
     chunkFilename: '[name].[chunkhash:5].chunk.js'
+  },
+  externals: {
+    jquery: 'jQuery'
   },
   recordsOutputPath: path.join(__dirname, 'records.json'),
   module: {
