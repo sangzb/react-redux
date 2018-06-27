@@ -10,7 +10,7 @@ import './styles';
 import React from 'react';
 import ReactDom from 'react-dom';
 import { Route } from 'react-router';
-import { BrowserRouter, Switch } from 'react-router-dom';
+import { HashRouter, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
 // 全局存储 Redux Store
@@ -27,12 +27,12 @@ const TestPage = () => (
 );
 
 const App = (props) => (
-  <BrowserRouter>
+  <HashRouter>
     <Switch>
       <Route path='/test' component={TestPage}/>
       <Route path='/' component={IndexPage}/>
     </Switch>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 // const connectedApp = connect(state => state)(App);
